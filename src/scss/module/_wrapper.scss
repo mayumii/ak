@@ -5,6 +5,15 @@ img {
   display: block;
   margin: auto;
 }
+.scroll__show {
+  opacity: 0;
+  transform: translateY(100px);
+  &[data-show="true"] {
+    transition: opacity 2s ease .3s, transform 2s ease .3s;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 .mincho {
 	font-family: "Sawarabi Mincho", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;;
 }
@@ -22,12 +31,18 @@ img {
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  margin: 80px auto;
+	margin: 80px auto;
+	opacity: 0;
+  &[data-show="true"] {
+    transition: opacity 2s ease 0s;
+    opacity: 1;
+  }
 }
 
 .dot {
 	margin: 25px auto 0;
-	p {
+	div {
+		text-align: center;
 		font-size: 30px;
     line-height: 35px;
 	}
