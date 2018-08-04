@@ -1,0 +1,152 @@
+h1, p, span {
+  text-align: center;
+}
+img {
+  display: block;
+  margin: auto;
+}
+.mincho {
+	font-family: "Sawarabi Mincho", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;;
+}
+.avenir {
+	font-family: "Avenir", Verdana, Meiryo, Osaka, sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.baskerville {
+	font-family: 'Libre Baskerville', serif;
+	transform: scaleX(1.1);
+}
+
+.wrapper {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 80px auto;
+}
+
+.dot {
+	margin: 25px auto 0;
+	p {
+		font-size: 30px;
+    line-height: 35px;
+	}
+}
+
+.title {
+	span {
+		display:inline-block;
+		&:first-child {
+			font-size: 86px;
+			margin-right: 8px;
+			transform-origin: left;
+		}
+		&:nth-child(2) {
+			font-size: 62px;
+		}
+		&:nth-child(3) {
+			font-size: 86px;
+			margin-right: 8px;
+			transform-origin: left;
+		}
+		&:nth-child(4) {
+			font-size: 75px;
+			transform: translateY(-3px);
+		}
+	}
+	p {
+		transform: translateY(-15px);
+	}
+}
+.date {
+	margin-top: 30px;
+	p {
+		&:first-child {
+			font-size: 20px;
+			letter-spacing: 2.5px;
+		}
+		&:nth-child(2) {
+			font-size: 15px;
+		}
+	}
+}
+.place {
+	margin: 30px auto 20px;
+	p {
+		font-family: "Rounded Mplus 1c";
+		font-size: 16px;
+		line-height: 36px;
+	}
+}
+.mainimg {
+	margin-top: 50px;
+}
+.text {
+	margin: 65px auto 55px;
+	p {
+		font-size: 16px;
+		line-height: 29px;
+	}
+}
+
+.intro{
+	width: 750px;
+	display: flex;
+	&__thumb {
+		width: 200px;
+		margin-left: 70px;
+		h2 {
+			font-size: 120px;
+			transform-origin: left;
+		}
+		p {
+			text-align: left;
+			font-size: 10px;
+			transform: translate(-5px, -39px);
+		}
+	}
+	&__main {
+		width: 420px;
+		margin-top: 33px;
+	}
+	&__name {
+		span {
+			text-align: left;
+			font-size: 13px;
+		}
+		p {
+			text-align: left;
+			font-size: 29px;
+		}
+	}
+	&__text {
+		margin-top: 30px;
+		margin-left: 60px;
+		p {
+			text-align: left;
+			font-size: 15px;
+		}
+	}
+}
+.intro1 {
+	margin: 60px auto 0;
+}
+.intro2 {
+	margin: 20px auto 90px;
+}
+.access {
+	margin: 45px;
+	font-size: 29px;
+	transform-origin: center;
+	p {
+		font-size: 16px;
+	}
+	&__map {
+		width: 680px;
+		height: 165px;
+		margin: 30px auto 80px;
+	}
+}
+.copy {
+	margin: 30px auto 100px;
+}
