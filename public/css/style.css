@@ -68,6 +68,12 @@ img {
     -webkit-transform: translateY(0px);
             transform: translateY(0px); }
 
+.scroll__opacity {
+  opacity: 0; }
+  .scroll__opacity[data-show="true"] {
+    transition: opacity 2s ease .3s;
+    opacity: 1; }
+
 .mincho {
   font-family: "Sawarabi Mincho", "\6E38\660E\671D", YuMincho, "\30D2\30E9\30AE\30CE\660E\671D   ProN W3", "Hiragino Mincho ProN", "HG\660E\671D  E", "\FF2D\FF33   \FF30\660E\671D", "\FF2D\FF33   \660E\671D", serif; }
 
@@ -135,8 +141,11 @@ img {
     font-family: "Rounded Mplus 1c";
     font-size: 16px;
     line-height: 36px; }
+  .place img {
+    height: 26px; }
 
 .mainimg {
+  height: 445px;
   margin-top: 50px; }
 
 .text {
@@ -149,8 +158,8 @@ img {
   width: 750px;
   display: flex; }
   .intro__thumb {
-    width: 200px;
-    margin-left: 70px; }
+    width: 180px;
+    margin-left: 54px; }
     .intro__thumb h2 {
       font-size: 120px;
       -webkit-transform-origin: left;
@@ -161,7 +170,7 @@ img {
       -webkit-transform: translate(-5px, -39px);
               transform: translate(-5px, -39px); }
   .intro__main {
-    width: 420px;
+    width: 510px;
     margin-top: 33px; }
   .intro__name span {
     text-align: left;
@@ -169,12 +178,17 @@ img {
   .intro__name p {
     text-align: left;
     font-size: 29px; }
+  .intro__maintext {
+    width: 100%; }
   .intro__text {
     margin-top: 30px;
-    margin-left: 60px; }
+    display: flex;
+    flex-wrap: wrap; }
     .intro__text p {
       text-align: left;
       font-size: 15px; }
+      .intro__text p:last-child {
+        margin-left: 20px; }
 
 .intro1 {
   margin: 60px auto 0; }
